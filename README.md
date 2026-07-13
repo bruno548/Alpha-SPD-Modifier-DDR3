@@ -30,7 +30,7 @@ A capacidade total de um módulo DDR3 não é um valor absoluto gravado diretame
 
 ## 🛠️ Como Utilizar o Sistema
 
-1. **Baixar o Software:** Você pode utilizar o script bruto rodando `python spd.py` (necessita do Tkinter instalado) ou executar diretamente o arquivo independente **`AH_APD.exe`** (dentro da pasta de releases).
+1. **Baixar o Software:** Você pode utilizar o script bruto rodando `python spd.py` (necessita do Tkinter instalado) ou executar diretamente o arquivo independente **`AH_APD.exe`**.
 2. **Carregar o Dump:** Faça a extração física do arquivo `.BIN` do chip EEPROM do seu pente de memória usando um gravador de bancada (ex: CH341A, RT809F, TL866) e clique em **"Abrir Dump (.bin)"**.
 3. **Modificar Parâmetros:** * Para reduzir a capacidade de um módulo de 4GB Dual Rank para 2GB, por exemplo, altere a **Densidade por Chip** para `1 Gb`, mantendo os `2 Ranks (Dual)` intocados para não quebrar o endereçamento físico do circuito.
 4. **Salvar e Gravar:** Clique em **"Salvar Dump Modificado"**. O novo arquivo gerado já virá com todos os bytes recalculados e a assinatura de CRC perfeitamente corrigida. Basta gravá-lo de volta na memória.
